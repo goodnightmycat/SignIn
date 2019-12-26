@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+    <include
+
+        android:id="@+id/show_main_title"
+        layout="@layout/title_layout"
+        />
+
+    <ListView
+        android:id="@+id/group_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_main_title"/>
+
+    <Button
+        android:id="@+id/exit_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#f13030"
+        android:text="退出该群"
+        android:textSize="20sp"
+        android:background="#FFEDEDED"
+       />
+
+</RelativeLayout>

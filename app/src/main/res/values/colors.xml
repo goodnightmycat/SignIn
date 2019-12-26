@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="signup">#A4C6DF</color>
+    <color name="down">#A4C6DF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="actionbar">#EDEDED</color>
+    <color name="groupbackground">#EDEDED</color>
+    <color name="listline">#D4D4D4</color>
+    <color name="background">#EDEDED</color>
+
+
+</resources>

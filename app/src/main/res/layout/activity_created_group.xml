@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="5dp">
+    <include
+        android:id="@+id/show_main_title"
+        layout="@layout/title_layout"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/show_main_title">
+
+        <ListView
+            android:id="@+id/create_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEDEDED"
+        android:text="创建群"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

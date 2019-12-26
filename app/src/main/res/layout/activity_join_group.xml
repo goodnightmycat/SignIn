@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <include
+
+        android:id="@+id/show_main_title"
+        layout="@layout/title_layout"
+        />
+
+    <EditText
+        android:id="@+id/et_group_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="输入群号" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_search_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加入"
+            android:textSize="20sp"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"/>
+
+    <LinearLayout
+        android:id="@+id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_search_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="群名称："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_search_group_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="群主："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_search_group_members_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="群成员："
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_search_group_location_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="群签到位置："
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
